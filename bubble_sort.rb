@@ -11,9 +11,9 @@ def bubble_sort(array)
       end
     end
 
-    break if not swap
+    break unless swap
   end
-  return array
+  array
 end
 
 p bubble_sort([3, 4, 5, 2, 1])
@@ -25,7 +25,6 @@ def bubble_sort_by(array)
     swap = false
 
     (n - 1).times do |i|
-      
       comparation = yield array[i], array[i + 1]
 
       if comparation.positive?
@@ -34,11 +33,11 @@ def bubble_sort_by(array)
       end
     end
 
-    break if not swap
+    break unless swap
   end
   p array
 end
 
-bubble_sort_by(["hi","hello","hey"]) do |left,right|
+bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
 end
