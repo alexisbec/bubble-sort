@@ -8,10 +8,11 @@ To run this code you can visit the [live preview](https://repl.it/@alexisbec/bub
 
 The code: 
 
-
+![screenshot](./screenshot_code.png)
 
 The output:
 
+![screenshot](./screenshot_output.png)
 
 ## Built With
 
